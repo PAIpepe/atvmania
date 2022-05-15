@@ -114,7 +114,6 @@ nav a:hover{
 .articol{
     position:relative;
     width:100%;
-    float:right;
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
@@ -232,6 +231,9 @@ nav a:hover{
     .imagine-overlay{
         opacity: 1;
     }
+    .articol:hover{
+        transform: scale(1);
+    }
 }
 @media screen and (max-width:768px) {
     .textcontainer{
@@ -243,5 +245,8 @@ nav a:hover{
     .imagine-overlay{
         opacity: 1;
         text-align: center;
+    }
+    .articol:hover{
+        transform: scale(1);
     }
 }
