@@ -69,7 +69,7 @@ nav{
     top: 100%;
     width: 100%;
     left:0;
-    background-color: #576490c7;
+    background-color: rgba(0, 0, 0, 0.815);
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
