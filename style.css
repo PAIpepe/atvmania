@@ -3,8 +3,10 @@
     src: url(fonts/samsungsharpsans.otf);
     font-size: small;
 }
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
 html{
-    height:100vh;
+    height:300vh;
     font-family: 'samsungsharpsans' , sans-serif;
     background:rgba(0, 0, 0, 0.815);
 }
@@ -100,6 +102,77 @@ nav a:hover{
     width:100%;
     height:50%;
 }
+.textcontainer{
+    
+    float:left;
+    width:50%;
+    min-height:100%;
+    color:white;
+    text-align: center;
+    font-size: 1.8vmax;
+    padding-top: 12%;
+}
+.container{
+    display: block;
+    float:right;
+    width:50%;
+    height:30%;
+    overflow:hidden ;
+}
+.articol{
+    position:relative;
+    width:100%;
+    float:right;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.articol:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+.imagine{
+   display: block;
+   width: 100%;
+   float: right;
+}
+.imagine-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.603);
+    color:white;
+    font-family: 'samsungsharpsans',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    text-decoration: none;
+}
+.imagine-title{
+    font-size: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.imagine-title:hover{
+    font-size: 50px;
+    text-decoration: none;
+}
+.imagine-title a{
+    text-decoration: none;
+    color:white;
+
+}
+.imagine-overlay:hover{
+    opacity: 1;
+}
+
+
+
+
 @media screen and (min-width:768px){
     .nav-toggle-label{
         display: none;
@@ -148,10 +221,36 @@ nav a:hover{
         transform: scale(1,1);
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:320px){
     #banner{
         width:100%;
         height:50%;
         margin-top:5rem;
-    } 
+    }
+    .textcontainer{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        height:100vh  !important;
+    }
+    .container img{
+        
+        width: 120%;
+        height:50vh  !important;
+    }
+    .imagine-overlay{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:768px) {
+    .textcontainer{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .imagine-overlay{
+        opacity: 1;
+    }
 }
