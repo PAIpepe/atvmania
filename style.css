@@ -91,7 +91,7 @@ nav a{
     transition: opacity 150ms ease-in-out ;
 }
 nav a:hover{
-    color:#000;
+    color:rgb(255, 255, 255);
 }
 .nav-toggle:checked ~ nav{
     transform: scale(1, 1);
@@ -199,7 +199,7 @@ nav a:hover{
         content:'';
         display: block;
         height: 3px;
-        background-color: #000;
+        background-color: rgb(255, 255, 255);
         position: absolute;
         top: -0.4em;
         left :0px;
