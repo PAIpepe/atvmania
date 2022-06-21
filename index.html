@@ -16,16 +16,24 @@
            <li><a href="#">Acasă</a></li>
            <li><a href="pages/trasee.html">Trasee</a></li>
            <li><a href="pages/instructaj.html">Instructaj</a></li>
-           <li><a href="https://www.instagram.com/iustiiii_art/">Instagram</a></li>
-           <li><a href="https://www.facebook.com/">Facebook</a></li>
-
        </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
        <span></span>
    </label> 
 </header>
-    <img src="images/atvbanner.jpg" id="banner">
+    <div class="banner"><div class="crossfade">
+        <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+       </div>
+       <div class="titlu"><h1>ATVMANIA</h1></div>
+       <div class="media-banner">
+        <h1><a href="https://www.instagram.com/iustiiii_art/"><img src="icons/instagramblack.png" id="instagram-black"></a><a href="https://www.facebook.com/PePe12332/"><img src="icons/facebookblack.png" id="facebook-black"></a></h1>
+       </div>
+    </div>
     <div class="container">
         <div class="articol">
             <img class="imagine" src="images/atv3.jpg" alt="atvuri">
@@ -68,6 +76,56 @@
             </ul>
         </nav>
     </div>
-    
+    <style>.crossfade > figure {
+        animation: imageAnimation 30s linear infinite 0s;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center center;
+        color: transparent;
+        height: 100%;
+        margin-top: 0%;
+        margin-left: 0px;
+        opacity: 0;
+        position: absolute;
+        filter: blur(2px);
+        width: 100%;
+        z-index: 0;
+      }
+      .crossfade > figure:nth-child(1) { background-image: url('images/banner.jpg'); }
+      .crossfade > figure:nth-child(2) {
+        animation-delay: 4s;
+        background-image: url('images/banner1.jpg');
+      }
+      .crossfade > figure:nth-child(3) {
+        animation-delay: 10s;
+       background-image: url('images/banner2.jpg');
+      }
+      .crossfade > figure:nth-child(4) {
+        animation-delay: 16s;
+        background-image: url('images/banner3.jpg');
+      }
+      .crossfade > figure:nth-child(5) {
+        animation-delay: 22s;
+        background-image: url('images/banner4.jpg');
+      }
+      @keyframes 
+      imageAnimation {  0% {
+       animation-timing-function: ease-in;
+       opacity: 0;
+      }
+       8% {
+       animation-timing-function: ease-out;
+       opacity: 1;
+      }
+       17% {
+       opacity: 1
+      }
+       25% {
+       opacity: 0
+      }
+       100% {
+       opacity: 0
+      }
+      }</style>
 </body>
 </html>
