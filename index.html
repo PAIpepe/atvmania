@@ -9,23 +9,32 @@
 </head>
 <body>
 <header>
-   <h1 class="logo">ATV MANIA</h1>
+    <h1 class="logo"><a href="index.html" style="text-decoration:none;color: white;">ATV MANIA</a></h1>
    <input type="checkbox" id="nav-toggle" class="nav-toggle">
    <nav>
        <ul>
-           <li><a href="#">Acasă</a></li>
-           <li><a href="pages/trasee.html">Trasee</a></li>
+           <li><a href="inchiriere.html">Închiriere</a></li>
+           <li><a href="pages/contact.html">Contact</a></li>
            <li><a href="pages/instructaj.html">Instructaj</a></li>
-           <li><a href="https://www.instagram.com/iustiiii_art/">Instagram</a></li>
-           <li><a href="https://www.facebook.com/">Facebook</a></li>
-
        </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
        <span></span>
    </label> 
 </header>
-    <img src="images/atvbanner.jpg" id="banner">
+    <div class="banner"><div class="crossfade">
+        <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+       </div>
+       <div class="titlu"><h1>ATVMANIA</h1></div>
+       <div class="play-button"><a href="https://www.youtube.com/" target="_blank"><img src="icons/play.png" id="play"></a></div>
+       <div class="media-banner">
+        <h1><a href="https://www.instagram.com/iustiiii_art/" target="_blank"><img src="icons/instagramblack.png" id="instagram-black"></a><a href="https://www.facebook.com/PePe12332/" target="_blank"><img src="icons/facebookblack.png" id="facebook-black"></a></h1>
+       </div>
+    </div>
     <div class="container">
         <div class="articol">
             <img class="imagine" src="images/atv3.jpg" alt="atvuri">
@@ -56,9 +65,9 @@
     <div class="footer">
         <div class="textfooter">
             <h><img src="icons/telefon.png" id="telefon"> 0755683762</h><br>
-            <h class="email"><img src="icons/mail.png" id="mail"><a href="mailto: iustiniustin2005@gmail.com" style="text-decoration:none;color:white;border-bottom: 0.5px solid white;"> iustiniustin2005@gmail.com</a></h><br>
-            <h><img src="icons/adress.jpg" id="adress"><a href="https://www.google.ro/maps/place/Strada+Valea+Bobului+4,+Urla%C8%9Bi/@44.9955167,26.2349992,17z/data=!3m1!4b1!4m5!3m4!1s0x40b3cb61328fffcf:0xe19abf666121cda7!8m2!3d44.9955129!4d26.2371879" style="text-decoration:none;color: white;">Strada Bobului, Nr. 3</a></h>
-            <h class="iconite"><a href="https://www.instagram.com/iustiiii_art/"><img src="icons/instagram.png" id="instagram"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><img src="icons/facebook.png" id="facebook"></a></h>
+            <h class="email"><img src="icons/mail.png" id="mail"><a href="mailto: iustiniustin2005@gmail.com" style="text-decoration:none;color:white;border-bottom: 0.5px solid white;" target="_blank"> iustiniustin2005@gmail.com</a></h><br>
+            <h><img src="icons/adress.jpg" id="adress"><a href="https://www.google.ro/maps/place/Strada+Valea+Bobului+4,+Urla%C8%9Bi/@44.9955167,26.2349992,17z/data=!3m1!4b1!4m5!3m4!1s0x40b3cb61328fffcf:0xe19abf666121cda7!8m2!3d44.9955129!4d26.2371879" style="text-decoration:none;color: white;" target="_blank"> Strada Bobului, Nr. 4i</a></h><br>
+            <h class="iconite"><a href="https://www.instagram.com/iustiiii_art/" target="_blank"><img src="icons/instagram.png" id="instagram"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook.png" id="facebook"></a></h>
         </div>
         <nav class="nav-bottom">
             <ul>
@@ -68,6 +77,56 @@
             </ul>
         </nav>
     </div>
-    
+    <style>.crossfade > figure {
+        animation: imageAnimation 30s linear infinite 0s;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center center;
+        color: transparent;
+        height: 100%;
+        margin-top: 0%;
+        margin-left: 0px;
+        opacity: 0;
+        position: absolute;
+        filter: blur(2px);
+        width: 100%;
+        z-index: 0;
+      }
+      .crossfade > figure:nth-child(1) { background-image: url('images/banner.jpg'); }
+      .crossfade > figure:nth-child(2) {
+        animation-delay: 4s;
+        background-image: url('images/banner1.jpg');
+      }
+      .crossfade > figure:nth-child(3) {
+        animation-delay: 10s;
+       background-image: url('images/banner2.jpg');
+      }
+      .crossfade > figure:nth-child(4) {
+        animation-delay: 16s;
+        background-image: url('images/banner3.jpg');
+      }
+      .crossfade > figure:nth-child(5) {
+        animation-delay: 22s;
+        background-image: url('images/banner4.jpg');
+      }
+      @keyframes 
+      imageAnimation {  0% {
+       animation-timing-function: ease-in;
+       opacity: 0;
+      }
+       8% {
+       animation-timing-function: ease-out;
+       opacity: 1;
+      }
+       17% {
+       opacity: 1
+      }
+       25% {
+       opacity: 0
+      }
+       100% {
+       opacity: 0
+      }
+      }</style>
 </body>
 </html>
